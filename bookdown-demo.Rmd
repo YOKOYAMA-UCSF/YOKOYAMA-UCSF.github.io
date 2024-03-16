@@ -37,81 +37,117 @@ knitr::write_bib(c(
 
 <!--chapter:end:index.Rmd-->
 
-# Introduction {#intro}
+# The Yokoyama Lab {#the-lab}
 
-You can label chapter and section titles using `{#label}` after them, e.g., we can reference Chapter \@ref(intro). If you do not manually label them, there will be automatic labels anyway, e.g., Chapter \@ref(methods).
+Yokoyama Lab Overview 
 
-Figures and tables with captions will be placed in `figure` and `table` environments, respectively.
+## Yokoyama Lab Mission {#lab-mission}
 
-```{r nice-fig, fig.cap='Here is a nice figure!', out.width='80%', fig.asp=.75, fig.align='center'}
-par(mar = c(4, 4, .1, .1))
-plot(pressure, type = 'b', pch = 19)
-```
 
-Reference a figure by its code chunk label with the `fig:` prefix, e.g., see Figure \@ref(fig:nice-fig). Similarly, you can reference tables generated from `knitr::kable()`, e.g., see Table \@ref(tab:nice-tab).
 
-```{r nice-tab, tidy=FALSE}
-knitr::kable(
-  head(iris, 20), caption = 'Here is a nice table!',
-  booktabs = TRUE
-)
-```
+## Our Philosophy {#lab-philosophy}
 
-You can write citations, too. For example, we are using the **bookdown** package [@R-bookdown] in this sample book, which was built on top of R Markdown and **knitr** [@xie2015].
 
-<!--chapter:end:01-intro.Rmd-->
 
-# Literature
+## Our Research
 
-Here is a review of existing methods.
 
-<!--chapter:end:02-literature.Rmd-->
+## Our Core Values {#lab-values}
 
-# Methods
+The way we conduct ourselves is a critical part of how we conduct science. Lab members will strive to uphold the following values:
 
-We describe our methods in this chapter.
+* **Integrity**: Like many things in the world, science is built on trust and honesty. We will pursue rigorous and transparent research, ensuring our work is credible and reliable.
 
-Math can be added in body using usual syntax like this 
+* **Humility**: By accepting that we may not decidedly know or understand everything, we are open to new perspectives. We are willing to admit we made mistakes and share what we have learned from them.
 
-## math example
+* **Kindness**: Science involves skepticism and criticism, but that does not mean it cannot be done with care and empathy. We hope to be respectful members of the scientific community, being considerate and supportive to our colleagues at all levels. 
 
-$p$ is unknown but expected to be around 1/3. Standard error will be approximated
+* **Diversity**: Science should reflect the vast perspectives, experiences and people that exist in the world. Our lab hopes to be inclusive to all, and promote equity throughout science.
 
-$$
-SE = \sqrt(\frac{p(1-p)}{n}) \approx \sqrt{\frac{1/3 (1 - 1/3)} {300}} = 0.027
-$$
+## Our Location
 
-You can also use math in footnotes like this^[where we mention $p = \frac{a}{b}$].
 
-We will approximate standard error to 0.027[^longnote]
 
-[^longnote]: $p$ is unknown but expected to be around 1/3. Standard error will be approximated
 
-    $$
-    SE = \sqrt(\frac{p(1-p)}{n}) \approx \sqrt{\frac{1/3 (1 - 1/3)} {300}} = 0.027
-    $$
 
-<!--chapter:end:03-method.Rmd-->
 
-# Applications
+<!--chapter:end:01-about.Rmd-->
 
-Some _significant_ applications are demonstrated in this chapter.
+# Lab Culture {#lab-culture}
 
-## Example one
+This chapter describes the structure and culture within the PALM Lab. The goal is to be clear about expectations for the members of the lab (ones that I have, as well as for each other) and importantly for myself.
 
-## Example two
+> _This section aims to provide a picture of what mentoring and working with me will be like in the PALM Lab. It will continually be in-progress, shaped by (and including) feedback from lab members and others alike. -- William_
 
-<!--chapter:end:04-application.Rmd-->
+## Lab Environment {#lab-environment}
 
-# Final Words
 
-We have finished a nice book.
+## Work Expectations {#lab-work}
 
-<!--chapter:end:05-summary.Rmd-->
+### Time Off {#lab-timeoff}
 
-`r if (knitr:::is_html_output()) '
+### Communication Expectations {#lab-communication}
+
+## Mentorship {#lab-mentorship}
+
+## Resolving Conflicts {#conflicts}
+
+<!--chapter:end:02-lab-culture.Rmd-->
+
+# Research Policies
+
+## Academic Integrity
+
+## Authorship {#authorship}
+
+## Open Science {#open-science}
+
+### Sharing experiment code and data
+
+### Preprints and conference presentations
+
+
+<!--chapter:end:03-research-policies.Rmd-->
+
+# Lab Resources
+
+
+## Required Tools
+
+
+
+## Recommended
+
+## Optional
+
+<!--chapter:end:04-resources.Rmd-->
+
+# Yokoyama Lab Onboarding {#getting-started}
+
+
+## Before you Join
+
+## First Week Tasks
+
+## First Six Months
+
+
+<!--chapter:end:05-getting-started.Rmd-->
+
+# Miscellaneous
+
+## Collaborators
+
+## Additional resources {#extra-resources}
+
+
+
+<!--chapter:end:06-miscellaneous.Rmd-->
+
+`r if (knitr::is_html_output()) '
 # References {-}
+
 '`
 
-<!--chapter:end:06-references.Rmd-->
+<!--chapter:end:07-references.Rmd-->
 

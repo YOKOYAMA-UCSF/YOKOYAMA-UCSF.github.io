@@ -155,121 +155,116 @@ Remember each Rmd file contains one and only one chapter, and a chapter is defin
 
 To compile this example to PDF, you need XeLaTeX. You are recommended to install TinyTeX (which includes XeLaTeX): \url{https://yihui.name/tinytex/}.
 
-\hypertarget{intro}{%
-\chapter{Introduction}\label{intro}}
+\hypertarget{the-lab}{%
+\chapter{The Yokoyama Lab}\label{the-lab}}
 
-You can label chapter and section titles using \texttt{\{\#label\}} after them, e.g., we can reference Chapter \ref{intro}. If you do not manually label them, there will be automatic labels anyway, e.g., Chapter \ref{methods}.
+Yokoyama Lab Overview
 
-Figures and tables with captions will be placed in \texttt{figure} and \texttt{table} environments, respectively.
+\hypertarget{lab-mission}{%
+\section{Yokoyama Lab Mission}\label{lab-mission}}
 
-\begin{Shaded}
-\begin{Highlighting}[]
-\FunctionTok{par}\NormalTok{(}\AttributeTok{mar =} \FunctionTok{c}\NormalTok{(}\DecValTok{4}\NormalTok{, }\DecValTok{4}\NormalTok{, .}\DecValTok{1}\NormalTok{, .}\DecValTok{1}\NormalTok{))}
-\FunctionTok{plot}\NormalTok{(pressure, }\AttributeTok{type =} \StringTok{\textquotesingle{}b\textquotesingle{}}\NormalTok{, }\AttributeTok{pch =} \DecValTok{19}\NormalTok{)}
-\end{Highlighting}
-\end{Shaded}
+\hypertarget{lab-philosophy}{%
+\section{Our Philosophy}\label{lab-philosophy}}
 
-\begin{figure}
+\hypertarget{our-research}{%
+\section{Our Research}\label{our-research}}
 
-{\centering \includegraphics[width=0.8\linewidth]{bookdown-demo_files/figure-latex/nice-fig-1} 
+\hypertarget{lab-values}{%
+\section{Our Core Values}\label{lab-values}}
 
-}
+The way we conduct ourselves is a critical part of how we conduct science. Lab members will strive to uphold the following values:
 
-\caption{Here is a nice figure!}\label{fig:nice-fig}
-\end{figure}
+\begin{itemize}
+\item
+  \textbf{Integrity}: Like many things in the world, science is built on trust and honesty. We will pursue rigorous and transparent research, ensuring our work is credible and reliable.
+\item
+  \textbf{Humility}: By accepting that we may not decidedly know or understand everything, we are open to new perspectives. We are willing to admit we made mistakes and share what we have learned from them.
+\item
+  \textbf{Kindness}: Science involves skepticism and criticism, but that does not mean it cannot be done with care and empathy. We hope to be respectful members of the scientific community, being considerate and supportive to our colleagues at all levels.
+\item
+  \textbf{Diversity}: Science should reflect the vast perspectives, experiences and people that exist in the world. Our lab hopes to be inclusive to all, and promote equity throughout science.
+\end{itemize}
 
-Reference a figure by its code chunk label with the \texttt{fig:} prefix, e.g., see Figure \ref{fig:nice-fig}. Similarly, you can reference tables generated from \texttt{knitr::kable()}, e.g., see Table \ref{tab:nice-tab}.
+\hypertarget{our-location}{%
+\section{Our Location}\label{our-location}}
 
-\begin{Shaded}
-\begin{Highlighting}[]
-\NormalTok{knitr}\SpecialCharTok{::}\FunctionTok{kable}\NormalTok{(}
-  \FunctionTok{head}\NormalTok{(iris, }\DecValTok{20}\NormalTok{), }\AttributeTok{caption =} \StringTok{\textquotesingle{}Here is a nice table!\textquotesingle{}}\NormalTok{,}
-  \AttributeTok{booktabs =} \ConstantTok{TRUE}
-\NormalTok{)}
-\end{Highlighting}
-\end{Shaded}
+\hypertarget{lab-culture}{%
+\chapter{Lab Culture}\label{lab-culture}}
 
-\begin{table}
+This chapter describes the structure and culture within the PALM Lab. The goal is to be clear about expectations for the members of the lab (ones that I have, as well as for each other) and importantly for myself.
 
-\caption{\label{tab:nice-tab}Here is a nice table!}
-\centering
-\begin{tabular}[t]{rrrrl}
-\toprule
-Sepal.Length & Sepal.Width & Petal.Length & Petal.Width & Species\\
-\midrule
-5.1 & 3.5 & 1.4 & 0.2 & setosa\\
-4.9 & 3.0 & 1.4 & 0.2 & setosa\\
-4.7 & 3.2 & 1.3 & 0.2 & setosa\\
-4.6 & 3.1 & 1.5 & 0.2 & setosa\\
-5.0 & 3.6 & 1.4 & 0.2 & setosa\\
-\addlinespace
-5.4 & 3.9 & 1.7 & 0.4 & setosa\\
-4.6 & 3.4 & 1.4 & 0.3 & setosa\\
-5.0 & 3.4 & 1.5 & 0.2 & setosa\\
-4.4 & 2.9 & 1.4 & 0.2 & setosa\\
-4.9 & 3.1 & 1.5 & 0.1 & setosa\\
-\addlinespace
-5.4 & 3.7 & 1.5 & 0.2 & setosa\\
-4.8 & 3.4 & 1.6 & 0.2 & setosa\\
-4.8 & 3.0 & 1.4 & 0.1 & setosa\\
-4.3 & 3.0 & 1.1 & 0.1 & setosa\\
-5.8 & 4.0 & 1.2 & 0.2 & setosa\\
-\addlinespace
-5.7 & 4.4 & 1.5 & 0.4 & setosa\\
-5.4 & 3.9 & 1.3 & 0.4 & setosa\\
-5.1 & 3.5 & 1.4 & 0.3 & setosa\\
-5.7 & 3.8 & 1.7 & 0.3 & setosa\\
-5.1 & 3.8 & 1.5 & 0.3 & setosa\\
-\bottomrule
-\end{tabular}
-\end{table}
+\begin{quote}
+\emph{This section aims to provide a picture of what mentoring and working with me will be like in the PALM Lab. It will continually be in-progress, shaped by (and including) feedback from lab members and others alike. -- William}
+\end{quote}
 
-You can write citations, too. For example, we are using the \textbf{bookdown} package \citep{R-bookdown} in this sample book, which was built on top of R Markdown and \textbf{knitr} \citep{xie2015}.
+\hypertarget{lab-environment}{%
+\section{Lab Environment}\label{lab-environment}}
 
-\hypertarget{literature}{%
-\chapter{Literature}\label{literature}}
+\hypertarget{lab-work}{%
+\section{Work Expectations}\label{lab-work}}
 
-Here is a review of existing methods.
+\hypertarget{lab-timeoff}{%
+\subsection{Time Off}\label{lab-timeoff}}
 
-\hypertarget{methods}{%
-\chapter{Methods}\label{methods}}
+\hypertarget{lab-communication}{%
+\subsection{Communication Expectations}\label{lab-communication}}
 
-We describe our methods in this chapter.
+\hypertarget{lab-mentorship}{%
+\section{Mentorship}\label{lab-mentorship}}
 
-Math can be added in body using usual syntax like this
+\hypertarget{conflicts}{%
+\section{Resolving Conflicts}\label{conflicts}}
 
-\hypertarget{math-example}{%
-\section{math example}\label{math-example}}
+\hypertarget{research-policies}{%
+\chapter{Research Policies}\label{research-policies}}
 
-\(p\) is unknown but expected to be around 1/3. Standard error will be approximated
+\hypertarget{academic-integrity}{%
+\section{Academic Integrity}\label{academic-integrity}}
 
-\[
-SE = \sqrt(\frac{p(1-p)}{n}) \approx \sqrt{\frac{1/3 (1 - 1/3)} {300}} = 0.027
-\]
+\hypertarget{authorship}{%
+\section{Authorship}\label{authorship}}
 
-You can also use math in footnotes like this\footnote{where we mention \(p = \frac{a}{b}\)}.
+\hypertarget{open-science}{%
+\section{Open Science}\label{open-science}}
 
-We will approximate standard error to 0.027\footnote{\(p\) is unknown but expected to be around 1/3. Standard error will be approximated
+\hypertarget{sharing-experiment-code-and-data}{%
+\subsection{Sharing experiment code and data}\label{sharing-experiment-code-and-data}}
 
-  \[
-  SE = \sqrt(\frac{p(1-p)}{n}) \approx \sqrt{\frac{1/3 (1 - 1/3)} {300}} = 0.027
-  \]}
+\hypertarget{preprints-and-conference-presentations}{%
+\subsection{Preprints and conference presentations}\label{preprints-and-conference-presentations}}
 
-\hypertarget{applications}{%
-\chapter{Applications}\label{applications}}
+\hypertarget{lab-resources}{%
+\chapter{Lab Resources}\label{lab-resources}}
 
-Some \emph{significant} applications are demonstrated in this chapter.
+\hypertarget{required-tools}{%
+\section{Required Tools}\label{required-tools}}
 
-\hypertarget{example-one}{%
-\section{Example one}\label{example-one}}
+\hypertarget{recommended}{%
+\section{Recommended}\label{recommended}}
 
-\hypertarget{example-two}{%
-\section{Example two}\label{example-two}}
+\hypertarget{optional}{%
+\section{Optional}\label{optional}}
 
-\hypertarget{final-words}{%
-\chapter{Final Words}\label{final-words}}
+\hypertarget{getting-started}{%
+\chapter{Yokoyama Lab Onboarding}\label{getting-started}}
 
-We have finished a nice book.
+\hypertarget{before-you-join}{%
+\section{Before you Join}\label{before-you-join}}
+
+\hypertarget{first-week-tasks}{%
+\section{First Week Tasks}\label{first-week-tasks}}
+
+\hypertarget{first-six-months}{%
+\section{First Six Months}\label{first-six-months}}
+
+\hypertarget{miscellaneous}{%
+\chapter{Miscellaneous}\label{miscellaneous}}
+
+\hypertarget{collaborators}{%
+\section{Collaborators}\label{collaborators}}
+
+\hypertarget{extra-resources}{%
+\section{Additional resources}\label{extra-resources}}
 
   \bibliography{book.bib,packages.bib}
 

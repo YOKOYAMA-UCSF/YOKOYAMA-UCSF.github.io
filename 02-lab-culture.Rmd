@@ -1,0 +1,18 @@
+# Lab Culture {#lab-culture}
+
+This chapter describes the structure and culture within the PALM Lab. The goal is to be clear about expectations for the members of the lab (ones that I have, as well as for each other) and importantly for myself.
+
+> _This section aims to provide a picture of what mentoring and working with me will be like in the PALM Lab. It will continually be in-progress, shaped by (and including) feedback from lab members and others alike. -- William_
+
+## Lab Environment {#lab-environment}
+
+
+## Work Expectations {#lab-work}
+
+### Time Off {#lab-timeoff}
+
+### Communication Expectations {#lab-communication}
+
+## Mentorship {#lab-mentorship}
+
+## Resolving Conflicts {#conflicts}
