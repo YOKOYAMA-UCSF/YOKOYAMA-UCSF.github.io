@@ -20,7 +20,6 @@ github-repo: YOKOYAMA-UCSF/YOKOYAMA-UCSF.github.io
 ```
 This is the lab manual for the UCSF Yokoyama Lab.
 
-
 ```{r include=FALSE}
 # automatically create a bib database for R packages
 #knitr::write_bib(c(
